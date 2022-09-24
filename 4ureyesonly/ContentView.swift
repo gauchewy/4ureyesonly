@@ -8,14 +8,46 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State private var showSheet: Bool = false
+    @State private var showImagePicker: Bool = false
+    @State private var sourceType: UIImagePickerController.SourceType = .camera
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        NavigationView {
+            
+            VStack{
+                Image("chicken2")
+                    .resizable()
+                    .frame(width: 300, height: 300)
+                
+                Button("Choose Picture"){
+                    self.showSheet = true
+                }.padding() //action sheet is the bottoom button controls that come up
+                    .actionSheet(isPresented: $showSheet){
+                        
+                    ActionSheet(title: Text("Select Photo"),
+                    message: Text("Choose from"),
+                    buttons:[
+                        .default(Text("Photo Library")){
+                            self.showImagePicker = true
+                            self.sourceType = .photoLibrary
+                        },
+                        .default(Text("Camera")){
+                            self.showImagePicker = true
+                            self.sourceType = .camera
+                             },
+                             .cancel()
+                    ])
+                    }
+                
+            }
+            
+            .navigationBarTitle("4ureyesonly")
+            
+        }.sheet(isPresented: $showImagePicker){
+            Text("MODAL")
         }
-        .padding()
     }
 }
 
