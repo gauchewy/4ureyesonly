@@ -11,6 +11,7 @@
 		7107E45A28DE9D0000975881 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7107E45928DE9D0000975881 /* ContentView.swift */; };
 		7107E45C28DE9D0100975881 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7107E45B28DE9D0100975881 /* Assets.xcassets */; };
 		7107E45F28DE9D0100975881 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7107E45E28DE9D0100975881 /* Preview Assets.xcassets */; };
+		71DC58BC28DEA68F004E830B /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71DC58BB28DEA68F004E830B /* ImagePicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,8 @@
 		7107E45928DE9D0000975881 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7107E45B28DE9D0100975881 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7107E45E28DE9D0100975881 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		71DC58BB28DEA68F004E830B /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		71DC58BD28DEB838004E830B /* -ureyesonly-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "-ureyesonly-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +54,12 @@
 		7107E45628DE9D0000975881 /* 4ureyesonly */ = {
 			isa = PBXGroup;
 			children = (
+				71DC58BD28DEB838004E830B /* -ureyesonly-Info.plist */,
 				7107E45728DE9D0000975881 /* _ureyesonlyApp.swift */,
 				7107E45928DE9D0000975881 /* ContentView.swift */,
 				7107E45B28DE9D0100975881 /* Assets.xcassets */,
 				7107E45D28DE9D0100975881 /* Preview Content */,
+				71DC58BB28DEA68F004E830B /* ImagePicker.swift */,
 			);
 			path = 4ureyesonly;
 			sourceTree = "<group>";
@@ -137,6 +142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71DC58BC28DEA68F004E830B /* ImagePicker.swift in Sources */,
 				7107E45A28DE9D0000975881 /* ContentView.swift in Sources */,
 				7107E45828DE9D0000975881 /* _ureyesonlyApp.swift in Sources */,
 			);
@@ -269,6 +275,8 @@
 				DEVELOPMENT_ASSET_PATHS = "\"4ureyesonly/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "-ureyesonly-Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Use camera to capture image";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -297,6 +305,8 @@
 				DEVELOPMENT_ASSET_PATHS = "\"4ureyesonly/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "-ureyesonly-Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Use camera to capture image";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
